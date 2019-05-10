@@ -37,16 +37,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                        KC_TRANSPARENT, KC_Q,          KC_W,          KC_E,         KC_R,            KC_T,        KC_TAB,
                        KC_TILD,        KC_A,          LT(2,KC_S),    LALT_T(KC_D), LCTL_T(KC_F),    KC_G,
                        KC_TRANSPARENT, KC_Z,          KC_X,          KC_C,         LSFT_T(KC_V),    KC_B,        KC_ESCAPE,
-                       KC_TRANSPARENT, KC_TRANSPARENT,KC_TRANSPARENT,LSFT_T(KC_NO),LALT_T(KC_SPACE),
+                       KC_TRANSPARENT, KC_TRANSPARENT,KC_TRANSPARENT,KC_LSHIFT,     LALT_T(KC_SPACE),
 
-                                                                              KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,
-                                                                              KC_BSPACE,     MO(1),         KC_MEH,
+                                                                              KC_TRANSPARENT,  KC_TRANSPARENT,KC_TRANSPARENT,
+		                                                              LT(1,KC_BSPACE), LCA(KC_QUOTE),    KC_RGUI,
 
                        KC_5,            KC_6,         KC_7,          KC_8,         KC_9,            KC_0,        KC_BSPACE,
                        KC_LEAD,         KC_Y,         KC_U,          KC_I,         KC_O,            KC_P,        KC_BSLASH,
                                         LT(4,KC_H),   RCTL_T(KC_J),  LALT_T(KC_K), LT(3,KC_L),      KC_SCOLON,   KC_QUOTE,
                        KC_ESCAPE,       KC_N,         LSFT_T(KC_M),  KC_COMMA,     KC_DOT,          KC_SLASH,    KC_RSHIFT,
-                       LALT_T(KC_SPACE),KC_UP,        KC_DOWN,       KC_LEFT,      KC_RIGHT,
+                       LALT_T(KC_SPACE),KC_RSHIFT,    KC_DOWN,       KC_LEFT,      KC_RIGHT,
 
                        KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,
                        KC_RGUI,MO(1),KC_ENTER
@@ -63,9 +63,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                        KC_TRANSPARENT,  KC_F6,         KC_F7,         KC_F8,         KC_F9,           KC_F10,        KC_F11,
                        KC_TRANSPARENT,  KC_MINUS,      KC_7,          KC_8,          KC_9,            KC_ASTR,       KC_F12,
-                                        KC_KP_DOT,     KC_4,          KC_5,          KC_6,            KC_KP_MINUS,   KC_F11,
+                                        KC_DOT,        KC_4,          KC_5,          KC_6,            KC_KP_MINUS,   KC_F11,
                        KC_TRANSPARENT,  KC_0,          KC_1,          KC_2,          KC_3,            KC_KP_PLUS,    KC_F10,
-                       KC_KP_0,         KC_0,          KC_KP_DOT,     KC_EQUAL,      KC_TRANSPARENT,
+                                                       KC_KP_0,       KC_0,          KC_DOT,          KC_EQUAL,      KC_TRANSPARENT,
 
                        KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,
                        KC_F14,KC_TRANSPARENT,KC_ENTER
